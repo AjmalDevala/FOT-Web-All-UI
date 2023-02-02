@@ -7,8 +7,8 @@ function PlayerLogin() {
         
         {/* <img className="h-screen " src={BG} alt="" srcset="" /> */}
 
-    <div className="relative flex flex-col justify-center min-h-screen overflow-hidden bg-transparent"  >
-        <div className="w-full p-6 m-auto bg-white rounded shadow-lg ring-2 ring-purple-800/50 lg:max-w-md">
+    <div className="relative flex flex-col justify-center min-h-screen overflow-hidden bg-transparent bg-[url('/src/assets/images/playerlogin.jpg')]"  >
+        <div className="w-full p-6 m-auto bg-white/60 rounded shadow-lg ring-2 ring-purple-800/50 lg:max-w-md">
           <h1 className="text-3xl font-semibold text-center text-purple-700">
             LOGIN
           </h1>

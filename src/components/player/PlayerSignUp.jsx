@@ -2,166 +2,134 @@ import React from "react";
 
 function PlayerSignUp() {
   return (
-    // <!-- component -->
     <div>
-      <section class="bg-white dark:bg-gray-900">
-        <div class="flex justify-center min-h-screen">
-          <div
-            class="hidden bg-cover lg:block lg:w-2/5"
-            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjBLx6zgkjj9NBaUGT7QeALkZAaGbnMIxgyPjHiyQXLfL5tws4ZdPYS4m6uvxBDo7jDxw&usqp=CAU')"
-          ></div>
+      {/* <!-- component -->?? */}
 
-          <div class="flex items-center w-full max-w-3xl p-8 mx-auto lg:px-12 lg:w-3/5">
-            <div class="w-full">
-              <h1 class="text-2xl font-semibold tracking-wider text-gray-800 capitalize dark:text-white">
-                Get your free account now.
-              </h1>
-
-              <p class="mt-4 text-gray-500 dark:text-gray-400">
-                Let’s get you all set up so you can verify your personal account
-                and begin setting up your profile.
-              </p>
-
-              <div class="mt-6">
-                <h1 class="text-gray-500 dark:text-gray-300">
-                  Select type of account
-                </h1>
-
-                <div class="mt-3 md:flex md:items-center md:-mx-2">
-                  <button class="flex justify-center w-full px-6 py-3 text-white bg-blue-500 rounded-md md:w-auto md:mx-2 focus:outline-none">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="w-6 h-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
-
-                    <span class="mx-2">client</span>
-                  </button>
-
-                  <button class="flex justify-center w-full px-6 py-3 mt-4 text-blue-500 border border-blue-500 rounded-md md:mt-0 md:w-auto md:mx-2 dark:border-blue-400 dark:text-blue-400 focus:outline-none">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="w-6 h-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                      />
-                    </svg>
-
-                    <span class="mx-2">worker</span>
-                  </button>
-                </div>
+      {/* <!-- component --> */}
+      <body class="antialiased bg-gradient-to-br from-green-100 to-white">
+        <div class="container px-6 mx-auto">
+          <div class="flex flex-col text-center md:text-left md:flex-row h-screen justify-evenly md:items-center">
+            <div class="flex flex-col w-full">
+              <div>
+                <svg
+                  class="w-20 h-20 mx-auto md:float-left fill-stroke text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="/src/assets/images/goly.png"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                  ></path>
+                </svg>
               </div>
-
-              <form class="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2">
-                <div>
-                  <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="John"
-                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                  />
-                </div>
-
-                <div>
-                  <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                    Last name
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Snow"
-                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                  />
-                </div>
-
-                <div>
-                  <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                    Phone number
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="XXX-XX-XXXX-XXX"
-                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                  />
-                </div>
-
-                <div>
-                  <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                    Email address
-                  </label>
-                  <input
-                    type="email"
-                    placeholder="johnsnow@example.com"
-                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                  />
-                </div>
-
-                <div>
-                  <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                    Password
-                  </label>
-                  <input
-                    type="password"
-                    placeholder="Enter your password"
-                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                  />
-                </div>
-
-                <div>
-                  <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                    Confirm password
-                  </label>
-                  <input
-                    type="password"
-                    placeholder="Enter your password"
-                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                  />
-                </div>
-
-                <button class="flex items-center justify-between w-full px-6 py-3 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
-                  <span>Sign Up </span>
-
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-5 h-5 rtl:-scale-x-100"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                      clip-rule="evenodd"
+              <h1 class="text-5xl text-gray-800 font-bold">
+                {" "}
+                Your journey starts here
+              </h1>
+              <p class="w-5/12 mx-auto md:mx-0 text-gray-500">
+                We Never Stop Dreaming Big{" "}
+              </p>
+            </div>
+            <div class="w-full md:w-full lg:w-9/12 mx-auto md:mx-0">
+              <div class="bg-white p-10 flex flex-col w-full shadow-xl rounded-xl">
+                <h2 class="text-2xl font-bold text-gray-800 text-left mb-5">
+                Sign Up
+                </h2>
+                <form action="" class="w-full">
+                  <div id="input" class="flex flex-col w-full my-5">
+                    <label for="username" class="text-gray-500 mb-2">
+                      Username
+                    </label>
+                    <input
+                      type="text"
+                      id="username"
+                      placeholder="Please insert your username"
+                      class="appearance-none border-2 border-gray-100 rounded-lg px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:shadow-lg"
                     />
-                  </svg>
-                </button>
-              </form>
+                  </div>
+                  <div id="input" class="flex flex-col w-full my-5">
+                    <label for="email" class="text-gray-500 mb-2">
+                      Enter Email
+                    </label>
+                    <input
+                      type="text"
+                      id="username"
+                      placeholder="Please insert your Email"
+                      class="appearance-none border-2 border-gray-100 rounded-lg px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:shadow-lg"
+                    />
+                  </div>
+                  <div id="input" class="flex flex-col w-full my-5">
+                    <label for="phone" class="text-gray-500 mb-2">
+                     Phone Number
+                    </label>
+                    <input
+                      type="password"
+                      id="password"
+                      placeholder="Please insert your phone number"
+                      class="appearance-none border-2 border-gray-100 rounded-lg px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:shadow-lg"
+                    />
+                  </div>
+                  <div id="input" class="flex flex-col w-full my-5">
+                    <label for="password" class="text-gray-500 mb-2">
+                      Password
+                    </label>
+                    <input
+                      type="password"
+                      id="password"
+                      placeholder="Please insert your password"
+                      class="appearance-none border-2 border-gray-100 rounded-lg px-4 py-3 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:shadow-lg"
+                    />
+                  </div>
+                  <div id="button" class="flex flex-col w-full my-5">
+                    <button
+                      type="button"
+                      class="w-full py-4 bg-green-600 rounded-lg text-green-100"
+                    >
+                      <div class="flex flex-row items-center justify-center">
+                        <div class="mr-2">
+                          <svg
+                            class="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="font-bold hover:translate-x-2  ">Sign Up</div>
+                      </div>
+                    </button>
+                    <div class="flex justify-evenly mt-5">
+                      {/* <a
+                        href="#"
+                        class="w-full text-center font-medium text-gray-500"
+                      >
+                        Recover password!
+                      </a> */}
+                      {/* <a
+                        href="#"
+                        class="w-full text-center font-medium text-gray-500"
+                      >
+                        Singup
+                      </a> */}
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-
-
-
-
-
-
+      </body>
     </div>
   );
 }

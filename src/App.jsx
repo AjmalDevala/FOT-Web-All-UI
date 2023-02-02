@@ -5,7 +5,8 @@ import Home from "./pages/player/PlayerHome";
 import PlayerChat from "./pages/player/Chat";
 import PlayerScout from "./pages/player/PlayerScout";
 import ScoutDashboard from "./pages/scout/ScoutDashboard";
-
+import ScoutSignUp from "./pages/scout/Signup";
+import Pricing from "./pages/player/PlayerPricing";
 function App() {
   return (
     <BrowserRouter>
@@ -15,7 +16,9 @@ function App() {
         <Route path="/PlayerSignUp" element={<PlayerSignUp />} />
         <Route path="/PlayerChat" element={<PlayerChat />} />
         <Route path="/PlayerScout" element={<PlayerScout />} />
+        <Route path="/ScoutSignup" element={<ScoutSignUp />} />
         <Route path="/ScoutDashboard" element={<ScoutDashboard />} />
+        <Route path="/PlayerPricing" element={<Pricing />} />
       </Routes>
     </BrowserRouter>
   );

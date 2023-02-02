@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/player/Navbar";
 import PlayerLogin from "../../components/player/PlayerLogin";
+import Footer from "../../components/player/Footer";
 function Login() {
   return (
     <div>
@@ -8,6 +9,7 @@ function Login() {
       <div>
         <PlayerLogin />
       </div>
+      <Footer />
     </div>
   );
 }

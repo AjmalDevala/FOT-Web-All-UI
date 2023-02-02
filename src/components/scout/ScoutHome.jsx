@@ -60,7 +60,7 @@ function ScoutHome() {
               style={{visibility: "visible; animation-duration: 1s; animation-name: fadeInUp;"}}
             >
               {/* <!-- service block --> */}
-              <div class="py-8 px-12 mb-12 bg-gray-50 border-b  hover:bg-cyan-300  border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+              <div class="py-8 px-12 mb-12 bg-gray-50 border-b  hover:bg-cyan-300  border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-4">
                 <div class="inline-block text-gray-900 mb-4">
                   {/* <!-- icon --> */}
                   <svg
