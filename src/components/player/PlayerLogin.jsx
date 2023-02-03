@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 // import BG from "../../../assets/images/playerlogin.jpg"
 
 function PlayerLogin() {
+  const  navigate =useNavigate()
   return (
     <div>
         
@@ -45,7 +47,8 @@ function PlayerLogin() {
               </a>
             </div>
             <div className="mt-6">
-              <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600">
+              <button className="w-full px-4  py-2 tracking-wide text-white transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600"
+               onClick={()=>{navigate('/')}}>
                 Login
               </button>
             </div>
@@ -53,7 +56,7 @@ function PlayerLogin() {
           <p class="mt-8 text-xs font-light text-center text-gray-700">
             {" "}
             Don't have an account?{" "}
-            <a href="#" class="font-medium text-purple-600 hover:underline">
+            <a onClick={()=>{navigate("/playerSignup")}} class="font-medium text-purple-600 hover:underline">
               Sign up
             </a>
           </p>

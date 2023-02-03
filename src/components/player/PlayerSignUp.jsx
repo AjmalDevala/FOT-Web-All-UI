@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function PlayerSignUp() {
+
+  const navigate = useNavigate()
   return (
     <div>
       {/* <!-- component -->?? */}
@@ -87,27 +90,9 @@ function PlayerSignUp() {
                   <div id="button" class="flex flex-col w-full my-5">
                     <button
                       type="button"
-                      class="w-full py-4 bg-green-600 rounded-lg text-green-100"
+                      class="   w-full py-4 bg-green-600 rounded-lg text-green-100" onClick={()=>{navigate('/playerLogin')}}
                     >
-                      <div class="flex flex-row items-center justify-center">
-                        <div class="mr-2">
-                          <svg
-                            class="w-6 h-6"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
-                            ></path>
-                          </svg>
-                        </div>
-                        <div class="font-bold hover:translate-x-2  ">Sign Up</div>
-                      </div>
+                        Sign Up
                     </button>
                     <div class="flex justify-evenly mt-5">
                       {/* <a
@@ -116,12 +101,12 @@ function PlayerSignUp() {
                       >
                         Recover password!
                       </a> */}
-                      {/* <a
+                      <a
                         href="#"
-                        class="w-full text-center font-medium text-gray-500"
+                        class="w-full text-center font-medium text-gray-500" onClick={()=>{navigate("/playerLogin")}}
                       >
-                        Singup
-                      </a> */}
+                        alredy  have an account
+                      </a>
                     </div>
                   </div>
                 </form>
