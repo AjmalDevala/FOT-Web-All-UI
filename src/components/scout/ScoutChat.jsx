@@ -1,6 +1,6 @@
 import React from "react";
 
-function Chat() {
+function ScoutChat() {
   return (
       <div>
         <div class="flex h-screen antialiased text-gray-800">
@@ -334,4 +334,4 @@ function Chat() {
   );
 }
 
-export default Chat;
+export default ScoutChat;

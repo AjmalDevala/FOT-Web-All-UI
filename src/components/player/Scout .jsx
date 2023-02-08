@@ -1,44 +1,232 @@
-import React from 'react'
+import React from "react";
 
 function scout() {
-    return (
-        <div>
-            {/* <!-- component --> */}
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"/>
+  return (
+    <div>
+      <link
+        rel="stylesheet"
+        href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css"
+      />
 
-                <div class='flex items-center justify-center min-h-screen from-pink-200 via-purple-300 to-blue-500 bg-gradient-to-br'>
-                    <div class='w-full max-w-lg py-8 flex flex-row items-center justify-center mx-auto bg-[#FFFBFB] rounded-lg shadow-xl'>
-                        <div class="flex flex-col md:flex-row w-3/4 md:w-5/6 space-x-0 md:space-x-8">
-                            <div class="w-full md:w-2/5 flex flex-col items-center justify-center">
-                                <figure class="w-1/2 md:w-full  rounded-full overflow-hidden"/>
-                                    <img src="https://images.pexels.com/photos/1820559/pexels-photo-1820559.jpeg?auto=compress&cs=tinysrgb&w=600" alt="woman wearing a headwrap and an Africa-shaped earring while smiling"/>
-                                 <div class="w-full md:w-3/5 space-y-4 flex flex-col justify-center items-center">
-                                   <div class="flex flex-col justify-center">
-                                    <h1 class="text-center md:text-left text-2xl font-bold text-gray-900">Justine Howell</h1>
-                                    <p class="inline text-gray-700 font-normal leading-6 w-full text-base">UX Researcher, Co-host of the Interesting Design podcast
-                                        and a proud mother of three children</p>
-                                </div>
-                                <ul class="space-y-4  md:space-y-0 space-x-0 md:space-x-4 flex flex-col md:flex-row text-left justify-center">
-                                    <li class="text-sm"><i class="iconoir-pin-alt mr-2"></i>NYC</li>
-                                    <li class="text-sm"><i class="iconoir-calendar mr-2"></i>Member since 2019 </li>
-                                </ul>
+      {/* <!-- Page Container --> */}
+      <div class="flex items-center justify-center min-h-screen bg-white ">
+        <div class="flex flex-col">
+          <div class="flex flex-col mt-8">
+            {/* <!-- Meet the Team --> */}
+            <div class="container max-w-7xl px-4">
+              {/* <!-- Section Header --> */}
+              <div class="flex flex-wrap justify-center text-center mb-24">
+                <div class="w-full lg:w-6/12 px-4">
+                  {/* <!-- Header --> */}
+                  <h1 class="text-gray-900 text-4xl font-bold mb-8">
+                    Meet the Scout
+                  </h1>
 
-                                <ul class="space-x-4 flex flex-row justify-center w-full mb-4">
-                                    <li class="text-sm text-gray-800"><strong class="text-gray-900">10.9k</strong> Followers</li>
-                                    <li class="text-sm text-gray-800"><strong class="text-gray-900">100</strong> Following</li>
-                                </ul>
-                                <button class="transition-colors bg-purple-700 hover:bg-purple-800 p-2 rounded-sm w-full text-white text-hover shadow-md shadow-purple-900">
-                                    Follow
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                  {/* <!-- Description --> */}
+                  <p class="text-gray-700 text-lg font-light">
+                    A player scout typically attends as many football matches as
+                    possible to evaluate targets first hand. Scouts who wish to
+                    identify promising young players typically attend
+                    lower-league club games,.
+                  </p>
+                  <p className="text-center text-bold">Connect and Message!</p>
                 </div>
+              </div>
+
+              {/* <!-- Team Members --> */}
+              <div class="flex flex-wrap">
+                {/* <!-- Member #1 --> */}
+                <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                  <div class="flex flex-col">
+                    {/* <!-- Avatar --> */}
+                    <a href="#" class="mx-auto">
+                      <img
+                        class="rounded-2xl w-72 h-72 drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                        src="/src/assets/images/Scout.jpg"
+                      />
+                    </a>
+
+                    {/* <!-- Details --> */}
+                    <div class="text-center mt-6">
+                      {/* <!-- Name --> */}
+                      <h1 class="text-gray-900 text-xl font-bold mb-1">
+                        Tranter Jaskulski
+                      </h1>
+
+                      {/* <!-- Title --> */}
+                      <div class="text-cyan-500 font-extrabold mb-2">Scout</div>
+
+                      {/* <!-- Social Icons --> */}
+                      <div
+                        class=" items-center justify-center opacity-50 
+                                transition-opacity duration-300"> 
+                                
+                    <p class="text-base text-body-color leading-loose ">
+                     Nationality   : <span className="text-orange-500">india</span>
+                  </p>
+                   <div>
+                    <p class="text-base text-body-color leading-loose ">
+                     Age  : <span className="text-orange-500">56</span>
+                  </p>
+                   </div>
+                   <div>
+                    <p class="text-base text-body-color leading-loose ">
+                     current Team : <span className="text-orange-500">DT PLAYER</span>
+                  </p>
+                   </div>
+                      </div>
+                    <button class="mx-auto lg:mx-0 hover:none bg-sky-400/70 text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                      Connect!
+                    </button>
+                    
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                  <div class="flex flex-col">
+                    {/* <!-- Avatar --> */}
+                    <a href="#" class="mx-auto">
+                      <img
+                        class="rounded-2xl w-72 h-72 drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                        src="/src/assets/images/Scout.jpg"
+                      />
+                    </a>
+
+                    {/* <!-- Details --> */}
+                    <div class="text-center mt-6">
+                      {/* <!-- Name --> */}
+                      <h1 class="text-gray-900 text-xl font-bold mb-1">
+                        Tranter Jaskulski
+                      </h1>
+
+                      {/* <!-- Title --> */}
+                      <div class="text-cyan-500 font-extrabold mb-2">Scout</div>
+
+                      {/* <!-- Social Icons --> */}
+                      <div
+                        class=" items-center justify-center opacity-50 
+                                transition-opacity duration-300"> 
+                                
+                    <p class="text-base text-body-color leading-loose ">
+                     Nationality   : <span className="text-orange-500">india</span>
+                  </p>
+                   <div>
+                    <p class="text-base text-body-color leading-loose ">
+                     Age  : <span className="text-orange-500">56</span>
+                  </p>
+                   </div>
+                   <div>
+                    <p class="text-base text-body-color leading-loose ">
+                     current Team : <span className="text-orange-500">DT PLAYER</span>
+                  </p>
+                   </div>
+                      </div>
+                    <button class="mx-auto lg:mx-0 hover:none bg-sky-400/70 text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                      Connect!
+                    </button>
+                    
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                  <div class="flex flex-col">
+                    {/* <!-- Avatar --> */}
+                    <a href="#" class="mx-auto">
+                      <img
+                        class="rounded-2xl w-72 h-72 drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                        src="/src/assets/images/Scout.jpg"
+                      />
+                    </a>
+
+                    {/* <!-- Details --> */}
+                    <div class="text-center mt-6">
+                      {/* <!-- Name --> */}
+                      <h1 class="text-gray-900 text-xl font-bold mb-1">
+                        Tranter Jaskulski
+                      </h1>
+
+                      {/* <!-- Title --> */}
+                      <div class="text-cyan-500 font-extrabold mb-2">Scout</div>
+
+                      {/* <!-- Social Icons --> */}
+                      <div
+                        class=" items-center justify-center opacity-50 
+                                transition-opacity duration-300"> 
+                                
+                    <p class="text-base text-body-color leading-loose ">
+                     Nationality   : <span className="text-orange-500">india</span>
+                  </p>
+                   <div>
+                    <p class="text-base text-body-color leading-loose ">
+                     Age  : <span className="text-orange-500">56</span>
+                  </p>
+                   </div>
+                   <div>
+                    <p class="text-base text-body-color leading-loose ">
+                     current Team : <span className="text-orange-500">DT PLAYER</span>
+                  </p>
+                   </div>
+                      </div>
+                    <button class="mx-auto lg:mx-0 hover:none bg-sky-400/70 text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                      Connect!
+                    </button>
+                    
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                  <div class="flex flex-col">
+                    {/* <!-- Avatar --> */}
+                    <a href="#" class="mx-auto">
+                      <img
+                        class="rounded-2xl w-72 h-72 drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                        src="/src/assets/images/Scout.jpg"
+                      />
+                    </a>
+
+                    {/* <!-- Details --> */}
+                    <div class="text-center mt-6">
+                      {/* <!-- Name --> */}
+                      <h1 class="text-gray-900 text-xl font-bold mb-1">
+                        Tranter Jaskulski
+                      </h1>
+
+                      {/* <!-- Title --> */}
+                      <div class="text-cyan-500 font-extrabold mb-2">Scout</div>
+
+                      {/* <!-- Social Icons --> */}
+                      <div
+                        class=" items-center justify-center opacity-50 
+                                transition-opacity duration-300"> 
+                                
+                    <p class="text-base text-body-color leading-loose ">
+                     Nationality   : <span className="text-orange-500">india</span>
+                  </p>
+                   <div>
+                    <p class="text-base text-body-color leading-loose ">
+                     Age  : <span className="text-orange-500">56</span>
+                  </p>
+                   </div>
+                   <div>
+                    <p class="text-base text-body-color leading-loose ">
+                     current Team : <span className="text-orange-500">DT PLAYER</span>
+                  </p>
+                   </div>
+                      </div>
+                    <button class="mx-auto lg:mx-0 hover:none bg-sky-400/70 text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                      Connect!
+                    </button>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-  
-    
-    )
+      </div>
+    </div>
+  );
 }
 
-export default scout 
+export default scout;

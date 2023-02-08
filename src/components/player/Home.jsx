@@ -26,6 +26,7 @@ function Home() {
           </div>
           {/* <!--Right Col--> */}
 
+
           <div class="w-full md:w-3/5  text-center">
             <img
               class="w-full md:w-4/5 z-50"
@@ -34,6 +35,53 @@ function Home() {
           </div>
         </div>
       </div>
+
+
+{/* home */}
+      <section
+  class="relative  bg-[url('/src/assets/images/undraw_junior_soccer_6sop (1).png')] bg-cover bg-center bg-no-repeat"
+>
+  <div
+    class="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"
+  ></div>
+
+  <div
+    class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+  >
+    <div class="max-w-xl text-center sm:text-left">
+      <h1 class="text-3xl font-extrabold sm:text-5xl">
+        Let us find your
+
+        <strong class="block font-extrabold text-rose-700">
+          Forever Home.
+        </strong>
+      </h1>
+
+      <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo
+        tenetur fuga ducimus numquam ea!
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-4 text-center">
+        <a
+          href="#"
+          class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+        >
+          Get Started
+        </a>
+
+        <a
+          href="#"
+          class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+        >
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       <section class="bg-white border-b py-8">
         <div class="container max-w-5xl mx-auto m-8">
@@ -642,7 +690,7 @@ function Home() {
           <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
         <h3 class="my-4 text-3xl leading-tight">
-          Main Hero Message to sell yourself!
+          CREATE PROFILE
         </h3>
         <button class="mx-auto lg:mx-0 hover:underline bg-amber-400 text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           Action!

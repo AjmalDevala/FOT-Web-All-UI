@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function ScoutHome() {
+  const navigate =useNavigate()
   return (
     <div>
       {/* <!-- component --> */}
@@ -63,7 +65,7 @@ function ScoutHome() {
               <div class="py-8 px-12 mb-12 bg-gray-50 border-b  hover:bg-cyan-300  border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-4">
                 <div class="inline-block text-gray-900 mb-4">
                   {/* <!-- icon --> */}
-                  <svg
+                  <svg 
                     xmlns="http://www.w3.org/2000/svg"
                     width="2rem"
                     height="2rem"
@@ -75,7 +77,7 @@ function ScoutHome() {
                   </svg>
                 </div>
                 <h3 class="text-lg leading-normal mb-2 font-semibold text-black">
-                  SEO Services
+                 search player
                 </h3>
                 <p class="text-gray-500">
                   This is a wider card with supporting text below as a natural
@@ -95,6 +97,7 @@ function ScoutHome() {
                 <div class="inline-block text-gray-900 mb-4">
                   {/* <!-- icon --> */}
                   <svg
+                  onClick={()=>{navigate("/scoutChat")}}
                     xmlns="http://www.w3.org/2000/svg"
                     width="2rem"
                     height="2rem"
@@ -107,7 +110,7 @@ function ScoutHome() {
                   </svg>
                 </div>
                 <h3 class="text-lg leading-normal mb-2 font-semibold text-black">
-                  Social Content
+                  Player Chat
                 </h3>
                 <p class="text-gray-500">
                   This is a wider card with supporting text below as a natural

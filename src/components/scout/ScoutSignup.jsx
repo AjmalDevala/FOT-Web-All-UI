@@ -1,11 +1,13 @@
 
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function ScoutSignUp() {
+  const navigate =useNavigate()
   return (
     <div>
       {/* <!-- component --> */}
-      <body class=" bg-transparent bg-[url('/src/assets/images/playerlogin.jpg')]">
+      <body class=" bg-blend-screen bg-[url('/src/assets/images/playerlogin.jpg')]">
         {/* <!-- Container --> */}
         <div class="container mx-auto">
           <div class="flex justify-center px-6 my-12">
@@ -81,7 +83,7 @@ function ScoutSignUp() {
                     </div>
                   </div>
                   <div class="mb-6 text-center">
-                    <button
+                    <button onClick={()=>{navigate("/ScoutLogin")}}
                       class="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
                       type="button"
                     >
